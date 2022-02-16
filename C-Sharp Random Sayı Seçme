@@ -1,0 +1,16 @@
+using System;
+
+namespace C#
+{
+    class Program
+    {
+        static void Main(string[] args)
+        { 
+            Random random = new Random();   
+
+            int a = random.Next(1, 100);
+
+              Console.WriteLine(a);
+        }
+    }
+}
