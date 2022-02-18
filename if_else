@@ -1,0 +1,23 @@
+using System;
+
+namespace if_Else
+    {
+    class Program
+     {
+      static void Main(string [] args)
+    {
+        Console.WriteLine("Bir sayı giriniz");
+
+        double sayi1 = Convert.ToDouble(Console.ReadLine());
+        if (sayi1 > 0)
+        {
+            Console.WriteLine("Girdiğin Sayı Positive bir sayı");
+        }
+        else
+        {
+            Console.WriteLine("Girdiğin Sayı Negative bir sayı");
+        }
+
+    }
+}
+    }
