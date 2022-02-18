@@ -1,0 +1,60 @@
+using System;
+
+namespace Hesap
+{
+    class Hesap_Makinesi
+{ 
+        static void Main(string[] args)
+        {
+            //kurulum
+            double sayi1, sayi2, sonuc;
+            string hesap;
+            //Hesap Makinesi Başlangıç 
+            Console.WriteLine("===========Hesap Makinesi===============");
+            //1. İşlem
+            Console.WriteLine("Lütfen 1. Sayıyı Giriniz");
+            sayi1 = 0;
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+            //2. İşlem
+            Console.WriteLine("Lütfen 2. Sayıyı Giriniz");
+            sayi2 = 0;
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+            //İşlem Seçme
+            Console.WriteLine("Lütfen İşlemi Giriniz");
+            hesap = Console.ReadLine();
+
+        switch (hesap)
+        {
+
+            case "+":
+                sonuc = sayi1 + sayi2;
+                Console.WriteLine("Sonucunuz " + sonuc);
+                break;
+
+            case "-":
+                sonuc = sayi1 - sayi2;
+                Console.WriteLine("Sonucunuz " + sonuc);
+                break;
+
+            case "*":
+                sonuc = sayi1 * sayi2;
+                Console.WriteLine("Sonucunuz " + sonuc);
+                break;
+
+            case "/":
+
+                sonuc = sayi1 / sayi2;
+                Console.WriteLine("Sonucunuz " + sonuc);
+                break;
+
+            default:
+
+                Console.WriteLine("Lütfen Sadece + , - , *, / İşaretlerini Kullanınız");
+                break;
+              
+          }
+        }
+      }
+    }
+ 
+
